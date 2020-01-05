@@ -1,2 +1,2 @@
 # homework-33-slider
-add homework 33
+https://rabee4221.github.io/homework-33-slider/index.html
