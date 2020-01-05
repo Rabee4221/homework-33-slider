@@ -1,0 +1,161 @@
+$fontBase: 'Poppins', sans-serif;
+
+body {
+    background: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+    border: none;
+    color: #000000;
+    font-family: $fontBase;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: $fontBase;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #545454;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+
+.header {
+    text-align: center;
+    max-width: 1170px;
+    margin: 55px auto 90px auto;
+
+
+    &__caption {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #303030;
+        margin: 0 0 12px 0;
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            top: -85%;
+            left: 78.7%;
+        }
+    }
+
+    
+
+    &__description {
+        font-size: 86px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 89px;
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            top: 51%;
+            left: -1.8%;
+        }
+    }
+
+    
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    
+
+    &:hover {
+        .slick-prev {
+            left: 20px;
+        }
+    
+        .slick-next {
+            right: 20px;
+            
+        } 
+    }
+
+    .slick-list {
+        position: relative;
+        overflow: hidden;
+    }
+
+    
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 96px;
+        width: 96px;
+        font-size: 0;
+        overflow: hidden;
+        color: transparent;
+        background-image: url(../images/arrow.png);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .slick-prev {
+        left: -100px;
+    }
+
+    .slick-next {
+        right: -100px;
+        background-position: -96px 0;
+    }
+
+    .slick-slide {
+        float: left;
+        display: flex;
+        justify-content: center;
+        transition-duration: 0.3s;
+        
+    }
+}
